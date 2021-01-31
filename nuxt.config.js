@@ -36,5 +36,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+      /*
+      ** You can extend webpack config here
+      */      
+    loaders: {
+      cssModules: {
+        modules: {
+          localIdentName: "[local]--_[hash:base64:4]",
+        }
+      },
+    },
   }
 }
